@@ -14,7 +14,7 @@ end
 def get_names(spicy_foods)
   # your code here
   names = spicy_foods.map{|food| food[:name]}
-  names
+  
 end
 
 # given an array of spicy foods, **return an array of hashes** 
@@ -22,7 +22,7 @@ end
 def spiciest_foods(spicy_foods)
   # your code here
   spicy = spicy_foods.select{|food| food[:heat_level] > 5}
-  spicy
+  
 end
 
 
@@ -80,4 +80,3 @@ def average_heat_level(spicy_foods)
   average = sum / spicy_foods.length
   
 end
-puts average_heat_level(spicy_foods)
